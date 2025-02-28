@@ -1,9 +1,9 @@
 .main-content {
   flex: 1;
+  margin-left: 250px; /* Same as sidebar width */
   padding: 20px;
-  overflow-y: auto;
-  height: 100vh;
   background-color: #f5f6fa;
+  min-height: 100vh;
 }
 
 /* Common styles for all pages */
@@ -24,44 +24,53 @@
 /* Common card styles */
 .card {
   background: white;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 20px;
+  padding: 24px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Common form controls */
 .main-content select,
 .main-content input {
-  padding: 8px 12px;
+  padding: 10px 16px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 14px;
   color: #333;
   background-color: white;
+  transition: all 0.3s ease;
 }
 
 .main-content select:focus,
 .main-content input:focus {
   outline: none;
   border-color: #1976d2;
-  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
 }
 
 /* Common button styles */
 .main-content button {
-  padding: 8px 16px;
+  padding: 10px 20px;
   background-color: #1976d2;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
-  transition: background-color 0.2s;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .main-content button:hover {
   background-color: #1565c0;
+  transform: translateY(-1px);
 }
 
 /* Loading state */
@@ -77,6 +86,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .main-content {
+    margin-left: 0;
     padding: 16px;
   }
 
