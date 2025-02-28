@@ -1,0 +1,60 @@
+.forecast-chart {
+  background: white;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-header select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+}
+
+.chart-container {
+  height: 300px;
+  margin: 20px 0;
+}
+
+.placeholder-chart {
+  height: 100%;
+  background: #f5f6fa;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.legend-color.solar {
+  background-color: #ffa726;
+}
+
+.legend-color.wind {
+  background-color: #66bb6a;
+} 

@@ -1,0 +1,63 @@
+.weather-info {
+  background: white;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.weather-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.weather-icon.temperature {
+  background-image: url('/icons/temperature.svg');
+}
+
+.weather-icon.wind {
+  background-image: url('/icons/wind.svg');
+}
+
+.weather-icon.sun {
+  background-image: url('/icons/sun.svg');
+}
+
+.weather-icon.humidity {
+  background-image: url('/icons/humidity.svg');
+}
+
+.weather-icon.cloud {
+  background-image: url('/icons/cloud.svg');
+}
+
+.weather-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-detail .label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.weather-detail .value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+} 

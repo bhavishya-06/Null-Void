@@ -1,0 +1,48 @@
+.energy-overview {
+  background: white;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.overview-item .label {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.overview-item .value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 8px;
+}
+
+.overview-item .trend {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.trend.positive {
+  color: #2e7d32;
+}
+
+.trend.negative {
+  color: #d32f2f;
+}
+
+.trend.neutral {
+  color: #ed6c02;
+} 
