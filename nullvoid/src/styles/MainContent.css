@@ -1,10 +1,16 @@
 .main-content {
   flex: 1;
-  margin-left: 250px; /* Same as sidebar width */
-  padding: 20px;
+  margin-left: var(--sidebar-width);
+  padding: var(--spacing-md);
   background-color: #f5f6fa;
   min-height: 100vh;
+  max-width: calc(var(--content-max-width) - var(--sidebar-width));
   transition: margin-left 0.3s ease;
+}
+
+.main-content > * {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* Common styles for all pages */
@@ -88,7 +94,8 @@
 @media (max-width: 768px) {
   .main-content {
     margin-left: 0;
-    padding-left: 60px; /* Make room for hamburger button */
+    padding: var(--spacing-sm);
+    padding-top: calc(var(--spacing-lg) + 40px); /* Account for hamburger button */
   }
 
   .main-content h1 {
@@ -97,5 +104,16 @@
 
   .card {
     padding: 16px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-content {
+    padding: var(--spacing-lg);
+  }
+  
+  /* Optimize content width for 1920px screens */
+  .main-content > * {
+    max-width: 1600px; /* Comfortable reading width for 1920px screens */
   }
 } 
