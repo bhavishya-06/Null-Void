@@ -1,34 +1,124 @@
 .settings {
   padding: 24px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
 }
 
 .settings-container {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.settings-header {
+  margin-bottom: 30px;
+}
+
+.settings-header h1 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.settings-header p {
+  color: #6c757d;
+  font-size: 1rem;
 }
 
 .settings-group {
   background: white;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.settings-group:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.settings-group h3 {
+  color: #2c3e50;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1.4rem;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 10px;
 }
 
 .setting-item {
-  margin: 15px 0;
-  padding: 10px 0;
+  margin: 20px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
 }
 
 .setting-item label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.setting-item .setting-description {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-top: 4px;
 }
 
 .setting-item select {
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  font-size: 0.95rem;
+  color: #4a5568;
+  min-width: 120px;
+  transition: all 0.2s ease;
+}
+
+.setting-item select:hover {
+  border-color: #cbd5e0;
+}
+
+.setting-item select:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.setting-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.save-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #48bb78;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.save-notification.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.save-notification.error {
+  background-color: #f56565;
 } 
