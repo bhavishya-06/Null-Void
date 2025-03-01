@@ -1,5 +1,8 @@
 .weather-info {
   background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .weather-grid {
@@ -60,4 +63,35 @@
   font-size: 16px;
   font-weight: 600;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .weather-info {
+    padding: 16px;
+  }
+
+  .weather-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+  }
+
+  .weather-item {
+    padding: 10px;
+  }
+
+  .weather-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  .weather-detail .value {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 } 

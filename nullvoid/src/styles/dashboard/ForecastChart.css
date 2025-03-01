@@ -1,5 +1,8 @@
 .forecast-chart {
   background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .chart-header {
@@ -57,4 +60,35 @@
 
 .legend-color.wind {
   background-color: #66bb6a;
+}
+
+@media (max-width: 768px) {
+  .forecast-chart {
+    padding: 16px;
+  }
+
+  .chart-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+
+  .chart-legend {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    height: 200px;
+  }
+
+  .legend-item {
+    font-size: 12px;
+  }
 } 

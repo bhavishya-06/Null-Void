@@ -1,5 +1,8 @@
 .energy-overview {
   background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .overview-grid {
@@ -45,4 +48,25 @@
 
 .trend.neutral {
   color: #ed6c02;
+}
+
+@media (max-width: 768px) {
+  .energy-overview {
+    padding: 16px;
+  }
+  
+  .overview-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+  }
+
+  .overview-item .value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
 } 

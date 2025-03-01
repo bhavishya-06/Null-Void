@@ -4,6 +4,7 @@
   padding: 20px;
   background-color: #f5f6fa;
   min-height: 100vh;
+  transition: margin-left 0.3s ease;
 }
 
 /* Common styles for all pages */
@@ -87,7 +88,7 @@
 @media (max-width: 768px) {
   .main-content {
     margin-left: 0;
-    padding: 16px;
+    padding-left: 60px; /* Make room for hamburger button */
   }
 
   .main-content h1 {
