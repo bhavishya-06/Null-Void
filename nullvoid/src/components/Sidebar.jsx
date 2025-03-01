@@ -38,6 +38,7 @@ const Sidebar = () => {
             <NavLink to="/forecasts">Forecasts</NavLink>
             <NavLink to="/analytics">Analytics</NavLink>
             <NavLink to="/locations">Locations</NavLink>
+            <NavLink to="/api-integration">API Integration</NavLink>
             <NavLink to="/settings">Settings</NavLink>
           </nav>
         </div>
