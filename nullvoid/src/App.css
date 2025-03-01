@@ -12,12 +12,16 @@
   background-color: #f5f6fa;
 }
 
-#root {
-  display: grid;
-  max-width: 1280px;
-  margin: 0 auto;
+/* Main content styles */
+.main-content {
+  flex: 1;
   padding: 2rem;
-  text-align: center;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
 
 .logo {

@@ -9,8 +9,8 @@ function App() {
     <EnergyDataProvider>
       <BrowserRouter>
         <div className="app-container">
-          <Sidebar />
-          <MainContent />
+          <Sidebar className="sidebar" />
+          <MainContent className="main-content" />
         </div>
       </BrowserRouter>
     </EnergyDataProvider>
